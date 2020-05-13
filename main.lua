@@ -32,7 +32,7 @@ for i, v in pairs(scripts) do
 	built = built .. "\n};";
 	if #v.Constants > 0 then
 		built = built .. "\nConstants = {\n";
-	end
+	end;
 	for index, constant in pairs(v.Constants) do
 		built = built .. "\t" .. tostring(index) .. "\t" .. tostring(constant) .. (v.Constants[index + 1] ~= nil and ";\n" or ";");
 	end;
