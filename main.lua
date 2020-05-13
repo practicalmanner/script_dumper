@@ -7,8 +7,6 @@ do
 	f("getupvalues", debug.getupvalues or getupvalues or getupvals);
 	f("getconstants", debug.getconstants or getconstants or getconsts);
 	f("islclosure", islclosure or isluaclosure or is_l_closure);
-	f("getgc", getgc or garbagecollection or get_gc);
-	f("getreg", getgc or garbagecollection or get_gc);
 end;
 
 local scripts = {};
