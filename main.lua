@@ -12,7 +12,7 @@ end;
 local scripts = {};
 local unknown_names = 0;
 local function insert(func)
-	local script_name = getfenv(func).name or ("Unknown_" .. unknown_names + 1);
+	local script_name = getfenv(func).script.name or ("Unknown_" .. unknown_names + 1);
 	if script_name == "Unknown_" .. (unknown_names + 1) then unknown_names = unknown_names + 1; end; 
 	if scripts[script_name] then return; end;
 	scripts[script_name] = {Upvalues = getupvalues(func), Constants = getconstants(func)};
