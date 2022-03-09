@@ -1,5 +1,3 @@
--- // created by tryhazard (tryhazard#9484, https://github.com/tryhazard)
-
 shared.type = "getgc";
 local storage = getgenv()[shared.type]();
 do
